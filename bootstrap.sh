@@ -14,6 +14,10 @@ rsync --exclude ".git/" \
 	  -avh --no-perms . ~;
 
 echo ""
+echo "👉 Configuring git..."
+git config --global init.templateDir ~/.git-template
+
+echo ""
 echo "👉 Reloading changes..."
 source ~/.zshrc;
 
