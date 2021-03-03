@@ -15,6 +15,7 @@ rsync --exclude ".git/" \
 
 echo ""
 echo "👉 Configuring git..."
+git config --global core.excludesfile ~/.gitignore
 git config --global init.templateDir ~/.git-template
 
 echo ""
