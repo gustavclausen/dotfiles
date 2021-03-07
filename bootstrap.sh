@@ -11,6 +11,7 @@ rsync --exclude ".git/" \
 	  --exclude ".osx" \
 	  --exclude "bootstrap.sh" \
 	  --exclude "README.md" \
+	  --exclude ".pre-commit-config.yaml" \
 	  -avh --no-perms . ~;
 
 echo ""
