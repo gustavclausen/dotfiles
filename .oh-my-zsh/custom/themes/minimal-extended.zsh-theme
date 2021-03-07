@@ -15,4 +15,4 @@ git_commits_ahead() {
   fi
 }
 
-PROMPT='- %2~ $(git_prompt_info)$(git_commits_ahead)›%b '
+PROMPT='%2~ $(git_prompt_info)$(git_commits_ahead)›%b '
