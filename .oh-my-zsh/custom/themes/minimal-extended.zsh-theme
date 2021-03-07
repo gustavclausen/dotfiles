@@ -7,7 +7,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="]%{$reset_color%}"
 
 # Gets the number of commits ahead from remote
 git_commits_ahead() {
-  if command git rev-parse --git-dir &>/dev/null; then
+  if command git rev-parse --git-dir &>/dev/null && git rev-list --count @{upstream}..HEAD &>/dev/null; then
     local commits="$(git rev-list --count @{upstream}..HEAD)"
     if [[ "$commits" != 0 ]]; then
       echo "%{$fg[green]%}▲%{$fg[white]%} $commits "
