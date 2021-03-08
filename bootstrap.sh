@@ -18,6 +18,7 @@ echo ""
 echo "👉 Configuring git..."
 git config --global core.excludesfile ~/.gitignore
 git config --global init.templateDir ~/.git-template
+git config --global push.default current
 
 echo ""
 echo "👉 Reloading changes..."
