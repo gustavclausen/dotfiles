@@ -80,9 +80,14 @@ source $ZSH/oh-my-zsh.sh
 prompt_context(){}      # Hide the "user@hostname" info in terminal
 eval $(thefuck --alias) # Configure "thefuck"
 
-######################
-### Global aliases ###
-######################
+####################################
+### Global aliases and variables ###
+####################################
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOPATH/bin
+
 # Programs
 alias tf="terraform"
 alias typora="open -a typora"
