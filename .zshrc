@@ -93,6 +93,7 @@ alias tf="terraform"
 alias typora="open -a typora"
 
 # Git
+alias copy_branch_name="echo -n `git branch --show-current` | pbcopy"
 alias merge_with_master="git checkout master && git pull && git checkout - && git merge -"
 alias pcr="pre-commit run --all-files"
 
