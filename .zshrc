@@ -87,6 +87,9 @@ eval $(thefuck --alias) # Configure "thefuck"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOPATH/bin
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
+alias sed="gsed"
 
 # Programs
 alias tf="terraform"
