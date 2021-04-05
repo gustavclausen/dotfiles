@@ -90,6 +90,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 alias sed="gsed"
+alias rr="ranger"
 
 # Programs
 alias tf="terraform"
