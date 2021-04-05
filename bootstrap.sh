@@ -19,6 +19,7 @@ echo "👉 Configuring git..."
 git config --global core.excludesfile ~/.gitignore
 git config --global init.templateDir ~/.git-template
 git config --global push.default current
+git config --global core.editor vim
 
 echo ""
 echo "👉 Reloading changes..."

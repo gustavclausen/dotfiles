@@ -89,6 +89,9 @@ export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
+export VISUAL=vim;
+export EDITOR=vim;
+
 alias sed="gsed"
 alias rr="ranger"
 
