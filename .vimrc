@@ -4,3 +4,4 @@ set smartindent
 set number
 set mouse=a
 colorscheme molokai
+set showcmd
