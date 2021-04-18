@@ -20,6 +20,7 @@ git config --global core.excludesfile ~/.gitignore
 git config --global init.templateDir ~/.git-template
 git config --global push.default current
 git config --global core.editor vim
+git config --global alias.root "rev-parse --show-toplevel"
 
 echo ""
 echo "👉 Reloading changes..."
