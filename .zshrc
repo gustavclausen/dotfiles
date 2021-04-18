@@ -104,6 +104,7 @@ alias copy_branch_name="echo -n \$(git branch --show-current) | pbcopy"
 alias merge_with_master="git checkout master && git pull && git checkout - && git merge -"
 alias pcr="pre-commit run --all-files"
 alias gor="cd \$(git root)"
+alias repo_web="gh repo view --web"
 
 # Utils
 alias last_cmd_copy='fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy'
