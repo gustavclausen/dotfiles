@@ -48,7 +48,7 @@ eval $(thefuck --alias)
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 # Program aliases
-alias rr="ranger"
+alias rr=". ranger"
 alias tf="terraform"
 alias typora="open -a typora"
 
