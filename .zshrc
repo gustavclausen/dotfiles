@@ -15,6 +15,13 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+SPACESHIP_PROMPT_SECTIONS="$HOME/.spaceship-prompt-sections"
+for prompt_section in `ls -1 $SPACESHIP_PROMPT_SECTIONS/*.zsh`
+do
+    source $prompt_section
+done
+SPACESHIP_RPROMPT_ORDER=(ranger)
+
 # Init oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
