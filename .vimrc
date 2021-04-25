@@ -7,3 +7,6 @@ colorscheme molokai
 set showcmd
 set number relativenumber
 set nu rnu
+set hlsearch
+set ignorecase
+set incsearch
