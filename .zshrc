@@ -39,9 +39,9 @@ export EDITOR=vim;
 #  \___|\___/|___/ |_| \___/|_|  |_|
 
 # SDK & languages
+export JAVA_HOME="/usr/local/opt/openjdk"
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH:$GOPATH/bin:$JAVA_HOME/bin
 
 # Shell utils
 eval $(thefuck --alias)
