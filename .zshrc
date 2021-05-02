@@ -13,6 +13,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  z
 )
 
 SPACESHIP_PROMPT_SEPARATE_LINE=false
