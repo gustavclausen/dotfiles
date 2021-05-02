@@ -16,6 +16,7 @@ plugins=(
   z
 )
 
+SPACESHIP_EXEC_TIME_SHOW=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_PROMPT_SECTIONS="$HOME/.spaceship-prompt-sections"
 for prompt_section in `ls -1 $SPACESHIP_PROMPT_SECTIONS/*.zsh`
