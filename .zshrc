@@ -41,14 +41,14 @@ export EDITOR=vim;
 # | (__| |_| \__ \ | || (_) | |\/| |
 #  \___|\___/|___/ |_| \___/|_|  |_|
 
-# SDK & languages
-export JAVA_HOME="/usr/local/opt/openjdk"
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH:$GOPATH/bin:$JAVA_HOME/bin
-
 # Shell utils
 eval $(thefuck --alias)
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# SDK & languages
+export JAVA_HOME="/usr/local/opt/openjdk"
+export GOPATH="$HOME/go"
+export GNUBIN="$(brew --prefix)/opt/make/libexec/gnubin"
+export PATH="$GOPATH:$GOPATH/bin:$JAVA_HOME/bin:$GNUBIN:$PATH"
 
 # Program aliases
 alias rr=". ranger"
