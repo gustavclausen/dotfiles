@@ -45,10 +45,11 @@ export EDITOR=vim;
 eval $(thefuck --alias)
 
 # SDK & languages
-export JAVA_HOME="/usr/local/opt/openjdk"
-export GOPATH="$HOME/go"
-export GNUBIN="$(brew --prefix)/opt/make/libexec/gnubin"
-export PATH="$GOPATH:$GOPATH/bin:$JAVA_HOME/bin:$GNUBIN:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="$HOME/go:$HOME/go/bin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 # Program aliases
 alias rr=". ranger"
