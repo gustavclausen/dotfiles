@@ -5,6 +5,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree'
 
 call plug#end()
