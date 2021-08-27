@@ -14,11 +14,13 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   z
+  vi-mode
 )
 
 SPACESHIP_EXEC_TIME_SHOW=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_PROMPT_SECTIONS="$HOME/.spaceship-prompt-sections"
+SPACESHIP_VI_MODE_SHOW=true
 for prompt_section in `ls -1 $SPACESHIP_PROMPT_SECTIONS/*.zsh`
 do
     source $prompt_section
@@ -45,11 +47,13 @@ export EDITOR=vim;
 eval $(thefuck --alias)
 
 # SDK & languages
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
 export PATH="$HOME/go:$HOME/go/bin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+export JAVA_HOME="/usr/local/opt/openjdk@8"
 
 # Program aliases
 alias rr=". ranger"
