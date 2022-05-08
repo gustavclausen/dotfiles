@@ -19,13 +19,7 @@ plugins=(
 
 SPACESHIP_EXEC_TIME_SHOW=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_PROMPT_SECTIONS="$HOME/.spaceship-prompt-sections"
 SPACESHIP_VI_MODE_SHOW=true
-for prompt_section in `ls -1 $SPACESHIP_PROMPT_SECTIONS/*.zsh`
-do
-    source $prompt_section
-done
-SPACESHIP_RPROMPT_ORDER=(ranger)
 
 # Init oh-my-zsh
 source $ZSH/oh-my-zsh.sh
