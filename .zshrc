@@ -15,6 +15,7 @@ plugins=(
   zsh-syntax-highlighting
   z
   vi-mode
+  history
 )
 
 SPACESHIP_EXEC_TIME_SHOW=false
