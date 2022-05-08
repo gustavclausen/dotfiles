@@ -52,12 +52,3 @@ export JAVA_HOME="/usr/local/opt/openjdk@8"
 
 # Program aliases
 alias rr=". ranger"
-alias tf="terraform"
-alias typora="open -a typora"
-
-# Git aliases
-alias copy_branch_name="echo -n \$(git branch --show-current) | pbcopy"
-alias merge_with_master="git checkout master && git pull && git checkout - && git merge -"
-alias pcr="pre-commit run --all-files"
-alias gor="cd \$(git root)"
-alias repo_web="gh repo view --web"
