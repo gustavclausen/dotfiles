@@ -41,11 +41,14 @@ export EDITOR=vim;
 # Shell utils
 eval $(thefuck --alias)
 
-# SDK & languages
+# SDKs, utils & languages
 export PATH="$HOME/go:$HOME/go/bin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Program aliases
 alias rr=". ranger"
