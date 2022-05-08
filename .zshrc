@@ -15,6 +15,9 @@ plugins=(
   zsh-syntax-highlighting
   z
   vi-mode
+  brew
+  npm
+  history-substring-search
 )
 
 SPACESHIP_EXEC_TIME_SHOW=false
