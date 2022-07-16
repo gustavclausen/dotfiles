@@ -7,7 +7,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Settings
-ZSH_THEME="spaceship"
+ZSH_THEME="common"
 DISABLE_AUTO_TITLE="true" # Disable auto-setting terminal title.
 plugins=(
   git
@@ -15,21 +15,12 @@ plugins=(
   zsh-syntax-highlighting
   z
   vi-mode
-  brew
-  npm
-  history-substring-search
 )
-
-SPACESHIP_EXEC_TIME_SHOW=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_VI_MODE_SHOW=true
-SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_KUBECTL_SHOW=true
 
 # Init oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+COMMON_COLORS_CURRENT_DIR=green
 
 #  ___ _  _ ___ _    _      ___  ___ ___ _  _   _ _  _____ ___
 # / __| || | __| |  | |    |   \| __| __/_\| | | | ||_   _/ __|
