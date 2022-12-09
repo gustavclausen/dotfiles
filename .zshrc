@@ -1,52 +1,57 @@
-#   ___  _  _   __  ____   __  _______ _  _
-#  / _ \| || | |  \/  \ \ / / |_  / __| || |
-# | (_) | __ | | |\/| |\ V /   / /\__ \ __ |
-#  \___/|_||_| |_|  |_| |_|   /___|___/_||_|
-
-# Path to oh-my-zsh installation.
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# STYLING
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 export ZSH="$HOME/.oh-my-zsh"
-
-# Settings
 ZSH_THEME="common"
-DISABLE_AUTO_TITLE="true" # Disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="true" # Disable auto-setting terminal title
 plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  z
-  vi-mode
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    z
+    vi-mode
 )
 
-# Init oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 COMMON_COLORS_CURRENT_DIR=green
 
-#  ___ _  _ ___ _    _      ___  ___ ___ _  _   _ _  _____ ___
-# / __| || | __| |  | |    |   \| __| __/_\| | | | ||_   _/ __|
-# \__ \ __ | _|| |__| |__  | |) | _|| _/ _ \ |_| | |__| | \__ \
-# |___/_||_|___|____|____| |___/|___|_/_/ \_\___/|____|_| |___/
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# COMMAND-LINE TOOLS
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# GNU instead of FreeBSD tools for consistency :-)
+BREW_BIN="/opt/homebrew/bin/brew"
+if type "${BREW_BIN}" &>/dev/null; then
+    # shellcheck disable=SC2155
+    export BREW_PREFIX="$("${BREW_BIN}" --prefix)"
+    for bindir in "${BREW_PREFIX}/opt/"*"/libexec/gnubin"; do export PATH=$bindir:$PATH; done
+    for bindir in "${BREW_PREFIX}/opt/"*"/bin"; do export PATH=$bindir:$PATH; done
+    for mandir in "${BREW_PREFIX}/opt/"*"/libexec/gnuman"; do export MANPATH=$mandir:$MANPATH; done
+    for mandir in "${BREW_PREFIX}/opt/"*"/share/man/man1"; do export MANPATH=$mandir:$MANPATH; done
+fi
 
-export VISUAL=vim;
-export EDITOR=vim;
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# DEFAULTS
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+export LDFLAGS="-L/opt/homebrew/opt/llvm@13/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm@13/include"
+export VISUAL=vim
+export EDITOR=vim
 
-#   ___ _   _ ___ _____ ___  __  __
-#  / __| | | / __|_   _/ _ \|  \/  |
-# | (__| |_| \__ \ | || (_) | |\/| |
-#  \___|\___/|___/ |_| \___/|_|  |_|
-
-# Shell utils
-eval $(thefuck --alias)
-
-# SDKs, utils & languages
-export PATH="$HOME/go:$HOME/go/bin:$PATH"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="$(brew --prefix)/opt/make/libexec/gnubin:$PATH"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Program aliases
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# ALIASES
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 alias rr=". ranger"
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# PROGRAMMING
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+export PATH="$HOME/go:$HOME/go/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# MISC
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+eval $(thefuck --alias)
