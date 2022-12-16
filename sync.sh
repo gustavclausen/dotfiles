@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Resolve absolute path for current script
 SOURCE="${BASH_SOURCE[0]}"
 while [[ -L "$SOURCE" ]]; do # resolve $SOURCE until the file is no longer a symlink
@@ -11,7 +13,7 @@ DIR="$(cd -P "$(dirname "$SOURCE")" >/dev/null 2>&1 && pwd)"
 
 # Sync Homebrew dependencies
 echo "👉 Syncing Homebrew dependencies..."
-brew bundle dump --force
+(cd "$HOME" && brew bundle dump --force --global)
 
 echo ""
 echo "👉 Syncing files back to repo..."

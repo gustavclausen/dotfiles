@@ -32,7 +32,7 @@ git config --global alias.root "rev-parse --show-toplevel"
 
 echo ""
 echo "👉 Download Homebrew dependencies..."
-brew bundle install
+brew bundle install --global
 
 echo ""
 echo "👉 Reloading changes..."
