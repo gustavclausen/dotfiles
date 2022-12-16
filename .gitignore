@@ -3,4 +3,4 @@
 .vscode
 .terraform
 *.iml
-.Brewfile.lock.json
+Brewfile.lock.json
