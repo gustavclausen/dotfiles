@@ -16,12 +16,7 @@ git pull origin main
 
 echo ""
 echo "👉 Syncing files..."
-rsync --exclude ".git/" \
-  --exclude ".DS_Store" \
-  --exclude ".osx" \
-  --exclude "*.sh" \
-  --exclude "*.md" \
-  -avh --no-perms . ~
+rsync -avh --exclude-from="$DIR/exclude.list" --no-perms . ~
 
 echo ""
 echo "👉 Configuring git..."
