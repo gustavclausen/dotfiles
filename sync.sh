@@ -17,14 +17,9 @@ echo "👉 Syncing Homebrew dependencies..."
 
 echo ""
 echo "👉 Syncing files back to repo..."
-FILE_PATHS=$(find "$DIR" -type f -not -path "$DIR/.git/*" -not -name "*.sh" -printf "%P ")
-for FILE_PATH in $FILE_PATHS; do
-    SOURCE="$HOME/$FILE_PATH"
-    DIST="$DIR/$FILE_PATH"
-    if test -f "$SOURCE"; then
-        cp "$SOURCE" "$DIST"
-    fi
-done
+
+find "$DIR" -type f -printf "%P\n" | rsync -avh --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args ~ .
+find "$DIR" -mindepth 2 -type d -printf "%P\n" | rsync -avhr --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args ~ .
 
 echo ""
 echo "Done! Remember to commit and push the changes 🙂"
