@@ -33,15 +33,14 @@ fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # DEFAULTS
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
-export LDFLAGS="-L/opt/homebrew/opt/llvm@13/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm@13/include"
-export VISUAL=vim
-export EDITOR=vim
+export VISUAL=nvim;
+export EDITOR=nvim;
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # ALIASES
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 alias rr=". ranger"
+alias vim="nvim"
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # PROGRAMMING

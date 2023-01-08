@@ -22,7 +22,7 @@ echo ""
 echo "👉 Configuring git..."
 git config --global core.excludesfile ~/.gitignore
 git config --global push.default current
-git config --global core.editor vim
+git config --global core.editor nvim
 git config --global alias.root "rev-parse --show-toplevel"
 
 echo ""
