@@ -5,4 +5,15 @@ Collection of my dotfiles.
 
 ## Instructions
 
-Run `source bootstrap.sh` to setup.
+Sync configuration from this folder to home directory:
+
+```shell
+$ source bootstrap.sh
+```
+
+Sync configuration from home directory to this folder:
+
+```shell
+$ ./sync.sh
+```
+
