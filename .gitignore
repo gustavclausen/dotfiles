@@ -3,4 +3,3 @@
 .vscode
 .terraform
 *.iml
-Brewfile.lock.json
