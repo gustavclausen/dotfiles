@@ -5,11 +5,11 @@ cpu: 2
 # Size of the disk in GiB to be allocated to the virtual machine.
 # NOTE: changing this has no effect after the virtual machine has been created.
 # Default: 60
-disk: 60
+disk: 30
 
 # Size of the memory in GiB to be allocated to the virtual machine.
 # Default: 2
-memory: 2
+memory: 4
 
 # Architecture of the virtual machine (x86_64, aarch64, host).
 # Default: host
@@ -46,7 +46,7 @@ network:
   # Assign reachable IP address to the virtual machine.
   # NOTE: this is currently macOS only and ignored on Linux.
   # Default: false
-  address: false
+  address: true
   
   # Custom DNS nameservers for the virtual machine.
   #
@@ -54,13 +54,13 @@ network:
   # dns: [1.1.1.1, 8.8.8.8]
   #
   # Default: []
-  dns: []
+  dns: [1.1.1.1, 8.8.8.8]
   
   # Network driver to use (slirp, gvproxy)
   #   - slirp is the default user mode networking provided by Qemu
   #   - gvproxy is an alternative to VPNKit based on gVisor https://github.com/containers/gvisor-tap-vsock
   # Default: gvproxy
-  driver: gvproxy
+  driver: slirp
 
 # ===================================================================== #
 # ADVANCED CONFIGURATION
