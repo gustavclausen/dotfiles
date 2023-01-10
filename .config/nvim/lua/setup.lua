@@ -65,10 +65,14 @@ return packer.startup(function(use)
   use("windwp/nvim-autopairs")
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
   use("numToStr/Comment.nvim")
-  use("fatih/vim-go")
   use({
     "akinsho/toggleterm.nvim",
     tag = "*",
+  })
+
+  use({
+    "ray-x/go.nvim",
+    requires = { { "ray-x/guihua.lua" } },
   })
 
   if packer_bootstrap then
