@@ -29,3 +29,5 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 
 keymap.set("t", "<C-e>", "<C-\\><C-n>")
 keymap.set("t", "<C-ESC>", "<C-\\><C-n>")
+
+keymap.set("n", "<leader>rs", ":LspRestart<CR>")
