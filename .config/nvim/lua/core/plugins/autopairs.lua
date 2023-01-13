@@ -1,0 +1,14 @@
+local M = {
+  "windwp/nvim-autopairs",
+}
+
+function M.config()
+  require("nvim-autopairs").setup({
+    check_ts = true,
+    ts_config = {
+      lua = { "string" },
+    },
+  })
+end
+
+return M
