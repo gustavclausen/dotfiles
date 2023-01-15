@@ -1,7 +1,7 @@
 .git/
 *.DS_Store
 *.osx
-*.md
+README.md
 exclude.list
 bootstrap.sh
 sync.sh
