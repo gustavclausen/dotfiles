@@ -39,6 +39,21 @@ wk.register({
   -- misc
   m = {
     name = "Misc",
+    f = {
+      name = "Find",
+      b = {
+        "<cmd>Telescope buffers<CR>",
+        "Lists open buffers in current neovim instance",
+      },
+      c = {
+        "<cmd>Telescope command_history<CR>",
+        "Lists commands that were executed recently and reruns them when selected",
+      },
+      s = {
+        "<cmd>Telescope search_history<CR>",
+        "Lists searches that were executed recently and reruns them when selected",
+      },
+    },
     t = { "<cmd>ToggleTerm direction=float<CR>", "Toggle terminal" },
     g = { name = "Git" },
   },
