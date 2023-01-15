@@ -39,8 +39,8 @@ wk.register({
   -- misc
   m = {
     name = "Misc",
-    f = {
-      name = "Find",
+    l = {
+      name = "List",
       b = {
         "<cmd>Telescope buffers<CR>",
         "Lists open buffers in current neovim instance",
