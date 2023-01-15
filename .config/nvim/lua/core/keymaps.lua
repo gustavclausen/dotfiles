@@ -7,9 +7,6 @@ map("n", "<C-j>", "<C-W>j")
 map("n", "<C-k>", "<C-W>k")
 map("n", "<C-l>", "<C-W>l")
 
--- Terminal
-map("t", "<C-e>", "<C-\\><C-n>")
-map("t", "<C-ESC>", "<C-\\><C-n>")
 
 -- leader based (normal mode)
 wk.register({

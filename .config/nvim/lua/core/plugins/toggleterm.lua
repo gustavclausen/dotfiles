@@ -13,14 +13,16 @@ function M.config()
     dir = "git_dir",
     hidden = true,
     direction = "float",
-    on_open = function(term)
+    on_open = function()
       vim.cmd("startinsert!")
-      vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", { noremap = true, silent = true })
     end,
     on_close = function()
       vim.cmd("startinsert!")
     end,
   })
+
+  vim.api.nvim_set_keymap("t", "<C-e>", "<C-\\><C-n>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("t", "<C-q>", "<C-\\><C-n><cmd>ToggleTerm<CR>", { noremap = true, silent = true })
 
   function _LazygitToggle()
     lazygit:toggle()
