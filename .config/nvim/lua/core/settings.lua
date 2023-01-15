@@ -34,6 +34,7 @@ M.mason_tool_installer_ensure_installed = {
   "tflint",
   "vale",
   "yamllint",
+  "shfmt",
 }
 
 return M
