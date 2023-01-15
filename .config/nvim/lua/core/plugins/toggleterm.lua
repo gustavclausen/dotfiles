@@ -5,6 +5,7 @@ local M = {
 function M.config()
   local toggleterm = require("toggleterm")
   local Terminal = require("toggleterm.terminal").Terminal
+  local wk = require("which-key")
 
   toggleterm.setup()
 
@@ -28,7 +29,9 @@ function M.config()
     lazygit:toggle()
   end
 
-  vim.api.nvim_set_keymap("n", "<leader>mg", "<cmd>lua _LazygitToggle()<CR>", { noremap = true, silent = true })
+  wk.register({
+    t = { "<cmd> lua _LazygitToggle()<CR>", "Toggle Lazygit" },
+  }, { prefix = "<leader>mg", mode = "n", noremap = true, silent = true })
 end
 
 return M
