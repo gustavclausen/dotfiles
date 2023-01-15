@@ -7,6 +7,7 @@ map("n", "<C-j>", "<C-W>j")
 map("n", "<C-k>", "<C-W>k")
 map("n", "<C-l>", "<C-W>l")
 
+map("n", "Q", "<cmd>qall<CR>") -- Close all buffers and quit vim
 
 -- leader based (normal mode)
 wk.register({
