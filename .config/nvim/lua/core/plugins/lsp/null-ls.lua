@@ -14,13 +14,11 @@ nls.setup({
   },
   on_attach = function(client, bufnr)
     local wk = require("which-key")
-    local default_options = { silent = true }
+    local default_options = { silent = true, noremap = true }
 
     wk.register({
-      m = {
-        F = { "<cmd>lua require('core.plugins.lsp.utils').toggle_autoformat()<cr>", "Toggle format on save" },
-      },
-    }, { prefix = "<leader>", mode = "n", default_options })
+      F = { "<cmd>lua require('core.plugins.lsp.utils').toggle_autoformat()<cr>", "Toggle format on save" },
+    }, { prefix = "<leader>m", mode = "n", default_options })
 
     if client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
