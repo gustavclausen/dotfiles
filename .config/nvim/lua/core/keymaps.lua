@@ -41,5 +41,6 @@ wk.register({
   m = {
     name = "Misc",
     t = { "<cmd>ToggleTerm direction=float<CR>", "Toggle terminal" },
+    g = { name = "Git" },
   },
 }, { prefix = "<leader>", mode = "n" })
