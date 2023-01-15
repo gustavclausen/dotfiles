@@ -10,6 +10,7 @@ vim.g.loaded_netrwPlugin = 1
 
 function M.config()
   require("nvim-tree").setup({
+    open_on_setup = true,
     renderer = {
       icons = {
         glyphs = {
