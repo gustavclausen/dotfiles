@@ -18,6 +18,7 @@ wk.register({
     x = { "<cmd>close<CR>", "Close current split window" },
   },
   n = {
+    name = "Search",
     h = { "<cmd>nohl<CR>", "Remove search highlight" },
   },
   t = {
