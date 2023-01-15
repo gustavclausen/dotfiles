@@ -16,7 +16,12 @@ nls.setup({
     local wk = require("which-key")
     local default_options = { silent = true, noremap = true }
 
+    vim.api.nvim_buf_create_user_command(bufnr, "Format", function()
+      vim.lsp.buf.format()
+    end, { desc = "Format current buffer" })
+
     wk.register({
+      f = { "<cmd>Format<cr>", "Format current buffer" },
       F = { "<cmd>lua require('core.plugins.lsp.utils').toggle_autoformat()<cr>", "Toggle format on save" },
     }, { prefix = "<leader>m", mode = "n", default_options })
 
