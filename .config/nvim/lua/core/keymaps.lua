@@ -34,8 +34,8 @@ wk.register({
     f = { "<cmd>Telescope find_files<CR>", "Find files" },
     s = { "<cmd>Telescope live_grep<CR>", "Find string in files" },
   },
-  -- nvim-tree
-  e = { "<cmd>NvimTreeFocus<CR>", "Show and/or focus on tree explorer" },
+  -- neo-tree
+  e = { "<cmd>Neotree<CR>", "Show and/or focus on tree explorer" },
   -- misc
   m = {
     name = "Misc",
