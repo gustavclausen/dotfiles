@@ -53,6 +53,10 @@ wk.register({
         "<cmd>Telescope search_history<CR>",
         "Lists searches that were executed recently and reruns them when selected",
       },
+      p = {
+        "<cmd>Telescope projects<CR>",
+        "Lists recent projects",
+      },
     },
     t = { "<cmd>ToggleTerm direction=float<CR>", "Toggle terminal" },
     g = { name = "Git" },
