@@ -22,20 +22,22 @@ function M.custom_lsp_attach(client, bufnr)
   wk.register({
     l = {
       name = "LSP",
-      a = { "<cmd>Lspsaga code_action<cr>", "Code action" },
-      f = { "<cmd>Lspsaga lsp_finder<cr>", "LSP finder" },
-      d = { "<cmd>Lspsaga peek_definition<cr>", "Peek definition" },
+      a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code action" },
+      d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
       D = { "<cmd>lua vim.lsp.buf.declaration()<cr>", "Go to declaration" },
+      e = { "<cmd>Telescope diagnostics bufnr=0<cr>", "Diagnostics" },
+      k = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover commands" },
       i = {
         "<cmd>lua vim.lsp.buf.implementation()<cr>",
         "Show implementations",
       },
-      r = {
-        n = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-        r = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
-      },
-      x = { "<cmd>LspRestart<cr>", "Restart language servers" },
-      K = { "<cmd>Lspsaga hover_doc<cr>", "Hover documentation" },
+      r = { "<cmd>lua vim.lsp.buf.references()<cr>", "References" },
+      R = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+      l = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Line diagnostics" },
+      n = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next diagnostic" },
+      p = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Prev diagnostic" },
+      q = { "<cmd>lua vim.diagnostic.setloclist()<cr>", "Quickfix diagnostics" },
+      t = { "<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type definition" },
     },
   }, { prefix = "<leader>", mode = "n", default_options })
 end
