@@ -32,6 +32,9 @@ function M.config()
         },
       },
     },
+    buffers = {
+      follow_current_file = false,
+    },
   })
 end
 
