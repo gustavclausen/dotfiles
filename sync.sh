@@ -18,8 +18,8 @@ echo "👉 Syncing Homebrew dependencies..."
 echo ""
 echo "👉 Syncing files back to repo..."
 
-find "$DIR" -type f -printf "%P\n" | rsync -avh --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args ~ .
-find "$DIR" -mindepth 2 -type d -printf "%P\n" | rsync -avhr --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args ~ .
+find "$DIR" -type f -printf "%P\n" | rsync -avh --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args --delete ~ .
+find "$DIR" -mindepth 2 -type d -printf "%P\n" | rsync -avhr --exclude-from="$DIR/exclude.list" --files-from=- --ignore-missing-args --delete ~ .
 
 echo ""
 echo "Done! Remember to commit and push the changes 🙂"
