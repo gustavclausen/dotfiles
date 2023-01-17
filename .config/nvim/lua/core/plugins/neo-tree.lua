@@ -11,9 +11,6 @@ function M.config()
   vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
   require("neo-tree").setup({
-    sources = {
-      "filesystem",
-    },
     enable_git_status = false,
     window = {
       mappings = {
