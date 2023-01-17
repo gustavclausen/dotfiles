@@ -59,7 +59,7 @@ wk.register({
         "Lists searches that were executed recently and reruns them when selected",
       },
       p = {
-        "<cmd>Telescope projects<CR>",
+        "<cmd>lua require('telescope').extensions.project.project{ display_type = 'full' }<CR>",
         "Lists recent projects",
       },
     },
