@@ -11,7 +11,22 @@ function M.config()
   vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
   require("neo-tree").setup({
-    enable_git_status = false,
+    enable_git_status = true,
+    default_component_configs = {
+      git_status = {
+        symbols = {
+          added = "",
+          modified = "",
+          deleted = "",
+          renamed = "",
+          untracked = "",
+          ignored = "",
+          unstaged = "",
+          staged = "",
+          conflict = "",
+        },
+      },
+    },
     window = {
       mappings = {
         ["<space>"] = "",
