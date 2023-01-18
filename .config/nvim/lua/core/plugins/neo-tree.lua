@@ -13,6 +13,9 @@ function M.config()
   require("neo-tree").setup({
     enable_git_status = true,
     default_component_configs = {
+      modified = {
+        symbol = "",
+      },
       git_status = {
         symbols = {
           added = "",
