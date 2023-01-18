@@ -5,6 +5,7 @@
         "describe",
         "require",
         "pairs",
-        "ipairs"
+        "ipairs",
+        "auto"
     ]
 }

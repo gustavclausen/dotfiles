@@ -1,3 +1,4 @@
+---@diagnostic disable: different-requires
 -- From https://github.com/folke/lazy.nvim
 -- DO NOT change the paths and don't remove the colorscheme
 local root = vim.fn.fnamemodify("./.repro", ":p")
