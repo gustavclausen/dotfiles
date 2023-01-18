@@ -13,6 +13,10 @@ function M.config()
   require("neo-tree").setup({
     enable_git_status = true,
     default_component_configs = {
+      icon = {
+        folder_closed = "",
+        folder_open = "",
+      },
       modified = {
         symbol = "",
       },
