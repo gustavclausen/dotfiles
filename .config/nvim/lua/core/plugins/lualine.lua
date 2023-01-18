@@ -8,7 +8,6 @@ function M.config()
       lualine_c = {
         {
           "filename",
-          file_status = true,
           path = 1,
         },
       },
