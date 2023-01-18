@@ -3,6 +3,8 @@
     "Lua.diagnostics.globals": [
         "vim",
         "describe",
-        "require"
+        "require",
+        "pairs",
+        "ipairs"
     ]
 }
