@@ -19,7 +19,6 @@ function M.config()
       },
     },
   })
-  require("mini.starter").setup()
   require("mini.surround").setup()
 end
 
