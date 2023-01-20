@@ -42,6 +42,10 @@ wk.register({
     n = { "<C-i>", "Next buffer" },
     p = { "<C-o>", "Previous buffer" },
   },
+  w = {
+    name = "Window",
+    r = { "<C-w>=", "Equalize width and height of all windows" },
+  },
   -- misc
   m = {
     name = "Misc",
