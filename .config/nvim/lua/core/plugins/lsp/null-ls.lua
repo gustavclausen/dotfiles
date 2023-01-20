@@ -13,6 +13,7 @@ nls.setup({
     nls.builtins.diagnostics.vale,
     nls.builtins.formatting.shfmt,
     nls.builtins.code_actions.gitsigns,
+    nls.builtins.formatting.prettier,
   },
   on_attach = function(client, bufnr)
     local wk = require("which-key")
