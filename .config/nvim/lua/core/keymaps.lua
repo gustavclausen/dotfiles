@@ -1,11 +1,11 @@
 local map = vim.keymap.set
 local wk = require("which-key")
 
--- Navigate between splits
-map("n", "<C-h>", "<C-W>h")
-map("n", "<C-j>", "<C-W>j")
-map("n", "<C-k>", "<C-W>k")
-map("n", "<C-l>", "<C-W>l")
+-- Navigation
+map("n", "<C-h>", "<cmd>NavigatorLeft<CR>")
+map("n", "<C-j>", "<cmd>NavigatorDown<CR>")
+map("n", "<C-k>", "<cmd>NavigatorUp<CR>")
+map("n", "<C-l>", "<cmd>NavigatorRight<CR>")
 
 map("n", "Q", "<cmd>qall<CR>") -- Close all buffers and quit vim
 
