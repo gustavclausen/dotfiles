@@ -46,6 +46,7 @@ alias lg="lazygit"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # PROGRAMMING
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+export PATH=$PATH:/Users/gustavclausen/bin
 export GOPATH="$HOME/go"
 export PATH="$GOPATH:$HOME/go/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
