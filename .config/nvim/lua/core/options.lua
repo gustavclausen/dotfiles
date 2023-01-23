@@ -23,5 +23,3 @@ o.clipboard:append("unnamedplus")
 o.splitright = true
 o.splitbelow = true
 o.mouse = "a"
-
-o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
