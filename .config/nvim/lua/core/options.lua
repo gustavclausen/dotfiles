@@ -7,6 +7,7 @@ o.number = true
 o.cursorline = true
 o.signcolumn = "yes"
 o.completeopt = { "menu", "menuone", "noselect", "noinsert" }
+o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
 o.ignorecase = true
 o.smartcase = true
