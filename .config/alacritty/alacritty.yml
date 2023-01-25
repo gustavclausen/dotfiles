@@ -1,11 +1,9 @@
 shell:
-  program: /opt/homebrew/opt/tmux/bin/tmux
+  program: /bin/zsh
   args:
-    - new-session
-    - -A
-    - -D
-    - -s
-    - main
+    - -l
+    - -c
+    - "tmux attach || tmux"
 
 window:
   startup_mode: Maximized
