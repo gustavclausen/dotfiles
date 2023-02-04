@@ -30,6 +30,8 @@ for _, lsp in ipairs(servers) do
     flags = { debounce_text_changes = 150 },
     settings = {
       Lua = languages.lua,
+      json = languages.json,
+      yaml = languages.yaml,
     },
   })
 end
