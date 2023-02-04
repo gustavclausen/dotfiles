@@ -14,7 +14,7 @@ nls.setup({
     nls.builtins.formatting.shfmt,
     nls.builtins.code_actions.gitsigns,
     nls.builtins.formatting.prettier.with({
-      extra_args = { "--no-bracket-spacing" },
+      extra_args = { "--config-precedence", "file-override", "--prose-wrap", "always" },
     }),
   },
   on_attach = function(client, bufnr)
