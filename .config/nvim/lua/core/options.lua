@@ -19,6 +19,7 @@ o.autoindent = true
 o.smartindent = true
 o.softtabstop = 2
 o.wrap = false
+o.binary = true
 
 o.clipboard:append("unnamedplus")
 o.splitright = true
