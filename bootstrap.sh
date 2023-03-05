@@ -30,6 +30,11 @@ echo "👉 Download Homebrew dependencies..."
 brew bundle install --global
 
 echo ""
+echo "👉 Setting up symlinks..."
+ln -f -s "${HOME}/.config/yabai/yabairc" "${HOME}/.yabairc"
+ln -f -s "${HOME}/.config/yabai/skhdrc" "${HOME}/.skhdrc"
+
+echo ""
 echo "👉 Reloading changes..."
 # shellcheck disable=SC1090
 source ~/.zshrc
