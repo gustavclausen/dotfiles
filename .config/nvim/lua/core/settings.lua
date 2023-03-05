@@ -4,7 +4,6 @@ M.theme = "catppuccin"
 
 M.treesitter_ensure_installed = {
   "bash",
-  "css",
   "dockerfile",
   "go",
   "hcl",
@@ -25,7 +24,6 @@ M.mason_tool_installer_ensure_installed = {
   "terraform-ls",
   "yaml-language-server",
   -- Formatter
-  "black",
   "prettier",
   "stylua",
   -- Linter
