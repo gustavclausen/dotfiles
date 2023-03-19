@@ -2,6 +2,14 @@
 
 set -x
 
+# ====== Functions =============================
+
+focus_window() {
+  SPACE_NAME=$(yabai -m query --spaces --space | jq ".label")
+  WINDOW_ID=$(yabai -m query --windows --space | jq ".[] | select (.app=${SPACE_NAME}).id")
+  yabai -m window --focus "${WINDOW_ID}"
+}
+
 # ====== Variables =============================
 
 declare -A gaps
@@ -67,6 +75,9 @@ yabai -m rule --add label="System Settings" app="^System Settings$" title=".*" m
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+yabai -m signal --add event=space_changed action="focus_window"
+yabai -m signal --add event=display_changed action="focus_window"
 
 set +x
 printf "yabai: configuration loaded...\\n"
