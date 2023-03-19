@@ -15,6 +15,8 @@ nls.setup({
     nls.builtins.formatting.prettier.with({
       extra_args = { "--config-precedence", "file-override", "--prose-wrap", "always" },
     }),
+    nls.builtins.formatting.cue_fmt,
+    nls.builtins.formatting.cueimports,
   },
   on_attach = function(client, bufnr)
     local wk = require("which-key")

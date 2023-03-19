@@ -27,6 +27,7 @@ brew "lima"
 brew "colima", args: ["HEAD"]
 brew "copier"
 brew "coreutils"
+brew "cue"
 brew "curl"
 brew "diffutils"
 brew "dnsmasq", restart_service: true

@@ -14,6 +14,7 @@ M.treesitter_ensure_installed = {
   "toml",
   "vim",
   "yaml",
+  "cue",
 }
 M.mason_tool_installer_ensure_installed = {
   "bash-language-server",
@@ -23,9 +24,11 @@ M.mason_tool_installer_ensure_installed = {
   "lua-language-server",
   "terraform-ls",
   "yaml-language-server",
+  "cuelsp",
   -- Formatter
   "prettier",
   "stylua",
+  "cueimports",
   -- Linter
   "eslint_d",
   "shellcheck",

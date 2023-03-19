@@ -28,7 +28,7 @@
   "nvim-autopairs": { "branch": "master", "commit": "ab49517cfd1765b3f3de52c1f0fda6190b44e27b" },
   "nvim-cmp": { "branch": "main", "commit": "01f697a68905f9dcae70960a9eb013695a17f9a2" },
   "nvim-lspconfig": { "branch": "master", "commit": "a557dd4d493e6afba3c24ffeb96fa32695f00874" },
-  "nvim-treesitter": { "branch": "master", "commit": "14fb59e125d7db4378e2345f36c9d2735528b899" },
+  "nvim-treesitter": { "branch": "master", "commit": "3731cf1c0c70287568d26f190849c68a46c21297" },
   "nvim-ts-autotag": { "branch": "main", "commit": "fdefe46c6807441460f11f11a167a2baf8e4534b" },
   "nvim-web-devicons": { "branch": "master", "commit": "c3c1dc4e36969370ff589b7025df8ec2e5c881a2" },
   "nvim-window-picker": { "branch": "main", "commit": "5902827d0e338890a22849e2f18dc80d1cc1a8db" },
@@ -40,6 +40,7 @@
   "todo-comments.nvim": { "branch": "main", "commit": "74c7d28cb50b0713c881ef69bcb6cdd77d8907d1" },
   "toggleterm.nvim": { "branch": "main", "commit": "31d38d11390bcd35a568fcc65a79b7d6ec89de62" },
   "trouble.nvim": { "branch": "main", "commit": "67337644e38144b444d026b0df2dc5fa0038930f" },
+  "vim-cue": { "branch": "master", "commit": "bd1a62303d096aa24fe4160a475645087f8770b3" },
   "vim-helm": { "branch": "master", "commit": "c2e7b85711d410e1d73e64eb5df7b70b1c4c10eb" },
   "vim-terraform": { "branch": "master", "commit": "d00503de9bed3a1da7206090cb148c6a1acce870" },
   "which-key.nvim": { "branch": "main", "commit": "fb027738340502b556c3f43051f113bcaa7e8e63" }
