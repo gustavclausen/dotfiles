@@ -30,7 +30,6 @@ brew "coreutils"
 brew "cue"
 brew "curl"
 brew "diffutils"
-brew "dnsmasq", restart_service: true
 brew "docker"
 brew "ed"
 brew "fd"
