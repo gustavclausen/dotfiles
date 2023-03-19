@@ -24,7 +24,7 @@ o.binary = true
 o.clipboard:append("unnamedplus")
 o.splitright = true
 o.splitbelow = true
-o.mouse = "a"
+o.mouse = nil
 
 o.wildignorecase = true
 o.wildignore = [[
