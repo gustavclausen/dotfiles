@@ -14,6 +14,7 @@ function M.config()
       "NeoTreeReveal",
     },
     auto_session_suppress_dirs = { "~/", "/" },
+    log_level = "error",
   })
 end
 
