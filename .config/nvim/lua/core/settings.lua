@@ -15,6 +15,7 @@ M.treesitter_ensure_installed = {
   "vim",
   "yaml",
   "cue",
+  "go",
 }
 M.mason_tool_installer_ensure_installed = {
   "bash-language-server",
@@ -25,6 +26,7 @@ M.mason_tool_installer_ensure_installed = {
   "terraform-ls",
   "yaml-language-server",
   "cuelsp",
+  "gopls",
   -- Formatter
   "prettier",
   "stylua",

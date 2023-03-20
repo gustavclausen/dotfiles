@@ -20,6 +20,7 @@ local servers = {
   "terraformls",
   "yamlls",
   "dagger",
+  "gopls",
 }
 
 for _, lsp in ipairs(servers) do

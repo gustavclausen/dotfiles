@@ -1,6 +1,12 @@
 local M = {
   "ray-x/go.nvim",
   ft = "go",
+  event = { "CmdlineEnter" },
+  build = ':lua require("go.install").update_all_sync()',
+}
+
+M.dependencies = {
+  { "ray-x/guihua.lua", build = "cd lua/fzy && make" },
 }
 
 function M.config()
