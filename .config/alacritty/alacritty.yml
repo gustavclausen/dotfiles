@@ -7,6 +7,7 @@ shell:
 
 window:
   startup_mode: Maximized
+  # option_as_alt: Both
 
 font:
   normal:
@@ -46,5 +47,3 @@ colors:
     magenta: "0xff79c6"
     cyan: "0x8be9fd"
     white: "0xffffff"
-
-alt_send_esc: false
