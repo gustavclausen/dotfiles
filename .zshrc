@@ -18,6 +18,9 @@ COMMON_COLORS_CURRENT_DIR=green
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # COMMAND-LINE TOOLS
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # GNU instead of FreeBSD tools for consistency :-)
 BREW_BIN="/opt/homebrew/bin/brew"
 if type "${BREW_BIN}" &>/dev/null; then
