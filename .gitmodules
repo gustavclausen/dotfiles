@@ -1,0 +1,10 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule ".config/alacritty/onedark-wallpapers"]
+	path = .config/alacritty/onedark-wallpapers
+	url = https://github.com/Narmis-E/onedark-wallpapers
+[submodule "onedark-wallpapers"]
+	path = onedark-wallpapers
+	url = https://github.com/Narmis-E/onedark-wallpapers

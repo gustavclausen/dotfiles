@@ -1,0 +1,10 @@
+alacritty
+aws-vault
+font-hack-nerd-font
+google-chrome
+monitorcontrol
+numi
+obsidian
+postman
+spotify
+visual-studio-code

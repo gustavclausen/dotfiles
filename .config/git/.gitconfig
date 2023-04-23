@@ -1,0 +1,10 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = nvim
+[push]
+	default = current
+[alias]
+	root = rev-parse --show-toplevel
+[user]
+	name = Gustav Kofoed Clausen
+	email = gustavclausen@users.noreply.github.com

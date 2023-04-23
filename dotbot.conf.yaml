@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.config/nvim: .config/nvim
+    ~/.config/alacritty: .config/alacritty
+    ~/.config/ranger: .config/ranger
+    ~/.tool-versions: .tool-versions
+    ~/.yabairc: .config/yabai/yabairc
+    ~/.skhdrc: .config/yabai/skhdrc
+    ~/.gitignore: .config/git/.gitignore-global
+    ~/.gitconfig: .config/git/.gitconfig
+    ~/.tmux.conf: .config/tmux/.tmux.conf
+    ~/.editorconfig: .editorconfig
+    ~/.zshrc: .config/zsh/.zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

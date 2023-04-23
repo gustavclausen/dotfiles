@@ -58,3 +58,4 @@ export NVM_DIR="$HOME/.nvm"
 # MISC
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 eval $(thefuck --alias)
+. "$(brew --prefix asdf)/libexec/asdf.sh"

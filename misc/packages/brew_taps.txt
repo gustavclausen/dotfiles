@@ -1,0 +1,11 @@
+aws/tap
+hashicorp/tap
+homebrew/bundle
+homebrew/cask
+homebrew/cask-fonts
+homebrew/core
+homebrew/services
+jesseduffield/lazygit
+koekeishiya/formulae
+pulumi/tap
+warrensbox/tap

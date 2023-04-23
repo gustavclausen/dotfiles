@@ -1,19 +1,26 @@
 # dotfiles
 
 Collection of my dotfiles.
-*Heavily* based on [this repo](https://github.com/mathiasbynens/dotfiles).
+
+Based on [olimorris' dotfiles](https://github.com/olimorris/dotfiles). Thanks
+for the inspiration.
 
 ## Instructions
 
-Sync configuration from this folder to home directory:
+- Full install:
 
-```shell
-$ source bootstrap.sh
-```
+  ```shell
+  $ rake install
+  ```
 
-Sync configuration from home directory to this folder:
+- Backup:
 
-```shell
-$ ./sync.sh
-```
+  ```shell
+  $ rake backup
+  ```
 
+- Update and backup:
+
+  ```shell
+  $ rake sync
+  ```

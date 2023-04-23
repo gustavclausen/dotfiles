@@ -1,3 +1,9 @@
+shell:
+  program: /opt/homebrew/opt/tmux/bin/tmux
+  args:
+    - new
+    - -A
+
 window:
   startup_mode: Maximized
 
