@@ -7,6 +7,9 @@ map("n", "<C-j>", "<cmd>NavigatorDown<CR>")
 map("n", "<C-k>", "<cmd>NavigatorUp<CR>")
 map("n", "<C-l>", "<cmd>NavigatorRight<CR>")
 
+map("n", "<Tab>", ">>_", { noremap = true })
+map("n", "<S-Tab>", "<<_", { noremap = true })
+
 map("n", "Q", "<cmd>qall<CR>") -- Close all buffers and quit vim
 
 -- leader based (normal mode)
