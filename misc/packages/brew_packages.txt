@@ -12,6 +12,7 @@ curl
 diffutils
 docker
 ed
+eksctl
 fd
 findutils
 flex
