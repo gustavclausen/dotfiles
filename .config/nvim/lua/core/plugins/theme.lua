@@ -8,6 +8,13 @@ if settings.theme == "catppuccin" then
       require("core.plugins.themes.catppuccin")
     end,
   }
+elseif settings.theme == "onedark" then
+  return {
+    "navarasu/onedark.nvim",
+    config = function()
+      require("core.plugins.themes.onedark")
+    end,
+  }
 else
   return {}
 end

@@ -1,7 +1,6 @@
 local o = vim.opt
 
 o.termguicolors = true
-o.background = "dark"
 o.relativenumber = true
 o.number = true
 o.cursorline = true
