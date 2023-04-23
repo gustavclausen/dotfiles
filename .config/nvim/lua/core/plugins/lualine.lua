@@ -4,6 +4,9 @@ local M = {
 
 function M.config()
   require("lualine").setup({
+    options = {
+      disabled_filetypes = { "neo-tree" },
+    },
     sections = {
       lualine_b = {},
       lualine_c = {
