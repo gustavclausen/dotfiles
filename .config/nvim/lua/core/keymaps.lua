@@ -39,7 +39,6 @@ wk.register({
   e = { "<cmd>Neotree<CR>", "Show and/or focus on tree explorer" },
   b = {
     name = "Buffer",
-    d = { "<cmd>%bd|e#<CR>", "Close all buffers" },
     n = { "<C-i>", "Next buffer" },
     p = { "<C-o>", "Previous buffer" },
   },
