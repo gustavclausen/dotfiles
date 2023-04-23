@@ -7,5 +7,4 @@ homebrew/core
 homebrew/services
 jesseduffield/lazygit
 koekeishiya/formulae
-pulumi/tap
 warrensbox/tap
