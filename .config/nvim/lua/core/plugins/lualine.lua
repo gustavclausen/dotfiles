@@ -5,6 +5,7 @@ local M = {
 function M.config()
   require("lualine").setup({
     sections = {
+      lualine_b = {},
       lualine_c = {
         {
           "filename",
