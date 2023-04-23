@@ -1,4 +1,4 @@
-DOTS_FOLDER = 'dotfiles-2.0'
+DOTS_FOLDER = '.dotfiles'
 DIRECTORY_NAME = File.dirname(__dir__)
 SKIP_TESTS_FOR = %w[].freeze # mas.rake brew.rake
 
