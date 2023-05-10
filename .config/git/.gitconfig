@@ -8,3 +8,5 @@
 [user]
 	name = Gustav Kofoed Clausen
 	email = gustavclausen@users.noreply.github.com
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
