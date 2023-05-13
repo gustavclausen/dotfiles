@@ -3,6 +3,8 @@ namespace :install do
   task :asdf_plugins do
     section 'Install asdf plugins'
 
+    run %( asdf plugin update --all )
+    run %( cat ~/.tool-versions | cut -f 1 -d ' ' | xargs -d"\n" -I"{}" asdf plugin add "{}" )
     run %( asdf install )
   end
 end
