@@ -47,6 +47,7 @@ less
 mackup
 make
 minikube
+mkdocs
 nano
 neofetch
 neovim
