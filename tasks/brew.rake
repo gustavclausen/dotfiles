@@ -73,7 +73,7 @@ namespace :install do
     section 'Installing Brew Cask Packages'
 
     brew_cask_packages.each do |package|
-      run %( brew install --force --appdir="/Applications" --fontdir="/Library/Fonts" #{package} )
+      run %( brew install --appdir="/Applications" --fontdir="/Library/Fonts" #{package} )
     end
   end
 
