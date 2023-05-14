@@ -60,6 +60,7 @@ rsync
 ruby
 screen
 shellcheck
+socat
 terraform-docs
 tfenv
 tflint
