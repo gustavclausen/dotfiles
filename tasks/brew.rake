@@ -92,5 +92,6 @@ namespace :update do
 
     run %( brew update )
     run %( brew upgrade )
+    run %( brew list --cask | xargs brew upgrade )
   end
 end
