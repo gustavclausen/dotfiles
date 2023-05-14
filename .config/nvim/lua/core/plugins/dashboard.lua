@@ -15,7 +15,7 @@ function M.config()
   }
   dashboard.custom_center = {
     {
-      icon = "  ",
+      icon = "  ",
       desc = "New buffer               ",
       action = "new",
     },
@@ -26,7 +26,7 @@ function M.config()
       action = "Telescope find_files find_command=rg,--hidden,--files",
     },
     {
-      icon = "  ",
+      icon = "  ",
       desc = "Recently opened files    ",
       action = "Telescope oldfiles",
     },
