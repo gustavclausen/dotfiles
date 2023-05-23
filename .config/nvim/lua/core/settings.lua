@@ -27,6 +27,7 @@ M.mason_tool_installer_ensure_installed = {
   "yaml-language-server",
   "cuelsp",
   "gopls",
+  "typescript-language-server",
   -- Formatter
   "prettier",
   "stylua",
