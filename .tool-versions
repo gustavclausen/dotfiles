@@ -1,3 +1,4 @@
 kubectl 1.26.3
 helmfile 0.151.0
 kubevela 1.8.1
+nodejs 20.1.0
