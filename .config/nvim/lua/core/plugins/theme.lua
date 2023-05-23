@@ -15,6 +15,13 @@ elseif settings.theme == "onedark" then
       require("core.plugins.themes.onedark")
     end,
   }
+elseif settings.theme == "github" then
+  return {
+    "projekt0n/github-nvim-theme",
+    config = function()
+      require("core.plugins.themes.github")
+    end,
+  }
 else
   return {}
 end

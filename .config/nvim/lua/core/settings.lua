@@ -1,6 +1,6 @@
 local M = {}
 
-M.theme = "onedark"
+M.theme = "github"
 
 M.treesitter_ensure_installed = {
   "bash",
