@@ -7,4 +7,5 @@ monitorcontrol
 numi
 obsidian
 postman
+rectangle-pro
 spotify
