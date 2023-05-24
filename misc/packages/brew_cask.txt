@@ -2,6 +2,7 @@ alacritty
 aws-vault
 font-hack-nerd-font
 google-chrome
+inkscape
 monitorcontrol
 numi
 obsidian
