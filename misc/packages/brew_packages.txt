@@ -49,6 +49,7 @@ mkdocs
 nano
 neofetch
 neovim
+norwoodj/tap/helm-docs
 nvm
 pre-commit
 python@3.10

@@ -6,4 +6,5 @@ homebrew/cask-fonts
 homebrew/core
 homebrew/services
 jesseduffield/lazygit
+norwoodj/tap
 warrensbox/tap
