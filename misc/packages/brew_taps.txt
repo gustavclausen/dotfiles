@@ -1,4 +1,5 @@
 aws/tap
+danielfoehrkn/switch
 hashicorp/tap
 homebrew/bundle
 homebrew/cask

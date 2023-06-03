@@ -59,3 +59,4 @@ export NVM_DIR="$HOME/.nvm"
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 eval $(thefuck --alias)
 . "$(brew --prefix asdf)/libexec/asdf.sh"
+INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh

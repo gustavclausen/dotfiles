@@ -9,6 +9,7 @@ colima
 copier
 cue
 curl
+danielfoehrkn/switch/switch
 diffutils
 docker
 docker-compose
