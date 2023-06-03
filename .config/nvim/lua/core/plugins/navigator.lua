@@ -1,9 +1,6 @@
-local M = {
+return {
   "numToStr/Navigator.nvim",
+  config = function()
+    require("Navigator").setup()
+  end,
 }
-
-function M.config()
-  require("Navigator").setup()
-end
-
-return M

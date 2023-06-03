@@ -1,12 +1,9 @@
-local M = {
+return {
   "jose-elias-alvarez/null-ls.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
+  config = function()
+    require("core.plugins.lsp.null-ls")
+  end,
 }
-
-function M.config()
-  require("core.plugins.lsp.null-ls")
-end
-
-return M

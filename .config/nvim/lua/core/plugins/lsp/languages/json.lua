@@ -1,4 +1,4 @@
-local opts = {
+return {
   format = { enabled = false },
   schemas = {
     {
@@ -8,5 +8,3 @@ local opts = {
     },
   },
 }
-
-return opts

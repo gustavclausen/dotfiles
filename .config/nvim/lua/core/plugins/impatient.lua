@@ -1,9 +1,6 @@
-local M = {
+return {
   "lewis6991/impatient.nvim",
+  config = function()
+    require("impatient")
+  end,
 }
-
-function M.config()
-  require("impatient")
-end
-
-return M

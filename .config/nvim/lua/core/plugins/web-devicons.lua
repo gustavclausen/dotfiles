@@ -1,9 +1,6 @@
-local M = {
+return {
   "nvim-tree/nvim-web-devicons",
+  config = function()
+    require("nvim-web-devicons").setup({})
+  end,
 }
-
-function M.config()
-  require("nvim-web-devicons").setup({})
-end
-
-return M

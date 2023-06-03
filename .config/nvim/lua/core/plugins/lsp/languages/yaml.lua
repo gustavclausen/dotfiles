@@ -1,4 +1,4 @@
-local opts = {
+return {
   schemaStore = {
     enable = true,
     url = "https://www.schemastore.org/api/json/catalog.json",
@@ -15,5 +15,3 @@ local opts = {
   completion = true,
   hover = true,
 }
-
-return opts

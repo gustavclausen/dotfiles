@@ -1,9 +1,6 @@
-local M = {
+return {
   "folke/which-key.nvim",
+  config = function()
+    require("which-key").setup()
+  end,
 }
-
-function M.config()
-  require("which-key").setup()
-end
-
-return M
