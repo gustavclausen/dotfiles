@@ -1,6 +1,7 @@
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # STYLING
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="common"
 DISABLE_AUTO_TITLE="true" # Disable auto-setting terminal title
@@ -14,6 +15,22 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 COMMON_COLORS_CURRENT_DIR=green
+
+ctx() {
+  if [[ $AWS_VAULT ]]; then
+    echo -n "%{$fg[$COMMON_COLORS_HOST_AWS_VAULT]%}$AWS_VAULT ❯%{$reset_color%} "
+  fi
+
+  if [[ (( $+commands[kubectl] )) ]]; then
+      local current_ctx=$(kubectl config current-context 2> /dev/null)
+
+      if [[ -n "$current_ctx" ]]; then
+        echo -n "%{$fg[cyan]%}$current_ctx ❯%{$reset_color%} "
+      fi
+  fi
+}
+
+PROMPT='$(ctx)$(common_current_dir)$(common_bg_jobs)$(common_return_status)'
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # COMMAND-LINE TOOLS
@@ -44,6 +61,7 @@ export EDITOR=nvim;
 alias rr=". ranger"
 alias vim="nvim"
 alias lg="lazygit"
+alias ks="switch"
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # PROGRAMMING
