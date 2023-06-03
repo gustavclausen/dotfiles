@@ -76,5 +76,12 @@ wk.register({
     },
     t = { "<cmd>ToggleTerm direction=float<CR>", "Toggle terminal" },
     g = { name = "Git" },
+    s = {
+      name = "Snippets",
+      r = {
+        "<cmd>source ~/.config/nvim/snippets/*<cr>",
+        "Reload snippets",
+      },
+    },
   },
 }, { prefix = "<leader>", mode = "n" })
