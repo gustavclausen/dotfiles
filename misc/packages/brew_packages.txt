@@ -55,6 +55,7 @@ nvm
 pre-commit
 python@3.10
 ranger
+redis
 ripgrep
 rsync
 ruby
