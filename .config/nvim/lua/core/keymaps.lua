@@ -11,6 +11,9 @@ map("n", "<Tab>", ">>_", { noremap = true })
 map("n", "<S-Tab>", "<<_", { noremap = true })
 
 map("n", "Q", "<cmd>qall<CR>") -- Close all buffers and quit vim
+map("n", "<cr>", "ciw") -- Quickly jump into changing word with insert mode
+map("i", "jk", "<Esc>") -- Quickly change to normal mode
+map("v", "y", "ygv<Esc>") -- Keep position after visual mode copy
 
 -- leader based (normal mode)
 wk.register({
