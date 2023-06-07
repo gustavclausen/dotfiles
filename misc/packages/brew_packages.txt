@@ -1,5 +1,6 @@
 argocd
 asdf
+aws-sam-cli
 aws-vault
 awscli
 bash
@@ -27,6 +28,7 @@ gnu-sed
 gnu-tar
 gnu-which
 go
+goreleaser
 gpatch
 guile
 gzip
