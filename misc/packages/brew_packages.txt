@@ -19,6 +19,7 @@ eksctl
 fd
 findutils
 flex
+fzf
 gawk
 gh
 git
