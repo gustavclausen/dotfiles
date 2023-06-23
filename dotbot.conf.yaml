@@ -16,6 +16,9 @@
     ~/.tmux.conf: .config/tmux/.tmux.conf
     ~/.editorconfig: .editorconfig
     ~/.zshrc: .config/zsh/.zshrc
+    ~/.bash_completion: .config/bash/.bash_completion
+    ~/.completions/:
+      path: .config/bash/completions/
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
