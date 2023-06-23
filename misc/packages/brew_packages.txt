@@ -43,10 +43,9 @@ jq
 k3d
 k9s
 kind
-kubectx
-kubevela
 kustomize
 less
+libpq
 mackup
 make
 minikube
@@ -72,7 +71,6 @@ tflint
 thefuck
 tmux
 tree
-vale
 watch
 wdiff
 wget
