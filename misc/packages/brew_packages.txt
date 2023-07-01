@@ -55,6 +55,7 @@ neofetch
 neovim
 norwoodj/tap/helm-docs
 nvm
+poetry
 pre-commit
 python@3.10
 ranger
