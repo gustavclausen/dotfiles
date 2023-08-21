@@ -19,6 +19,9 @@
     ~/.bash_completion: .config/bash/.bash_completion
     ~/.completions/:
       path: .config/bash/completions/
+    ~/.bash_utilities: .config/bash/.bash_utilities
+    ~/.utilities/:
+      path: .config/bash/utilities/
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

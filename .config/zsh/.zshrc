@@ -83,3 +83,5 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 autoload bashcompinit
 bashcompinit
 source ~/.bash_completion
+
+source ~/.bash_utilities
