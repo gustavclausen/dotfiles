@@ -60,7 +60,6 @@ export EDITOR=nvim;
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<
 alias rr=". ranger"
 alias vim="nvim"
-alias v="nvim"
 alias lg="lazygit"
 alias ks="switch"
 
