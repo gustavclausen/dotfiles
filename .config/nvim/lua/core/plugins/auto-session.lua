@@ -9,7 +9,7 @@ return {
       },
       bypass_session_save_file_types = { "neo-tree" },
       post_restore_cmds = {
-        "NeoTreeReveal",
+        "Neotree reveal",
       },
       auto_session_suppress_dirs = { "~/", "/" },
       log_level = "error",
