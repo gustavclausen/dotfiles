@@ -1,3 +1,13 @@
+local settings = require("core.settings")
+
+local treesitter_languages = {}
+
+for _, lan in pairs(settings.languages) do
+  if not lan.treesitter == nil then
+    table.insert(treesitter_languages, lan.treesitter)
+  end
+end
+
 return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
@@ -6,10 +16,8 @@ return {
     "windwp/nvim-ts-autotag",
   },
   config = function()
-    local settings = require("core.settings")
-
     require("nvim-treesitter.configs").setup({
-      ensure_installed = settings.treesitter_ensure_installed,
+      ensure_installed = treesitter_languages,
       highlight = {
         enable = true,
       },

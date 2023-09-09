@@ -11,13 +11,32 @@ M.toggle_autoformat = function()
   )
 end
 
-function M.custom_lsp_attach(client, bufnr)
+local augroup = vim.api.nvim_create_augroup("FormatAutogroup", {})
+
+function M.custom_lsp_attach(_, bufnr)
   local wk = require("which-key")
   local default_options = { silent = true, noremap = true, buffer = bufnr }
 
-  -- handled by null-ls
-  client.server_capabilities.documentFormattingProvider = false
-  client.server_capabilities.documentRangeFormattingProvider = false
+  vim.api.nvim_buf_create_user_command(bufnr, "W", function()
+    vim.cmd("noautocmd w")
+  end, { desc = "Format buffer without format" })
+
+  wk.register({
+    f = { "<cmd>Format<cr>", "Format current buffer" },
+    F = { "<cmd>lua require('core.plugins.lsp.utils').toggle_autoformat()<cr>", "Toggle format on save" },
+  }, { prefix = "<leader>m", mode = "n", default_options })
+
+  vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+  vim.api.nvim_create_autocmd("BufWritePost", {
+    group = augroup,
+    buffer = bufnr,
+    callback = function()
+      if AUTOFORMAT_ACTIVE then -- global var defined in functions.lua
+        vim.cmd("FormatWrite")
+      end
+      require("lint").try_lint()
+    end,
+  })
 
   wk.register({
     l = {
