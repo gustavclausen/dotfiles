@@ -17,6 +17,15 @@ namespace :update do
     run %( nvim --headless "+Lazy! update" +qa )
   end
 
+  desc 'Update Neovim tools'
+  task :neovim_plugins do
+    section 'Updating Neovim tools'
+
+    run %( nvim --headless "+TSUpdate" +qa )
+    run %( nvim --headless "+MasonToolsUpdate" +qa )
+  end
+
+
   desc 'Update Tmux plugins'
   task :tmux do
     section 'Updating Tmux plugins'
