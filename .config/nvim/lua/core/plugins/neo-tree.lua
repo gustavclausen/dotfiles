@@ -13,6 +13,7 @@ return {
         icon = {
           folder_closed = "",
           folder_open = "",
+          folder_empty = "󰜌",
         },
         modified = {
           symbol = "",
@@ -52,7 +53,9 @@ return {
         },
       },
       buffers = {
-        follow_current_file = false,
+        follow_current_file = {
+          enabled = false,
+        },
       },
     })
   end,
