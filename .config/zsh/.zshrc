@@ -76,6 +76,10 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
 export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # MISC
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<

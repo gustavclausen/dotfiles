@@ -57,6 +57,7 @@ norwoodj/tap/helm-docs
 nvm
 poetry
 pre-commit
+pyenv
 python@3.10
 ranger
 redis
