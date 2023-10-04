@@ -22,6 +22,9 @@ return {
         nvim_lsp[lan.language_server].setup({
           on_attach = function(client, bufnr)
             utils.custom_lsp_attach(client, bufnr)
+            if not (lan.extra_attach == nil) then
+              lan.extra_attach(bufnr)
+            end
           end,
           capabilities = capabilities,
           flags = { debounce_text_changes = 150 },

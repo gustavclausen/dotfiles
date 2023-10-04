@@ -109,6 +109,11 @@ M.languages = {
       completion = true,
       hover = true,
     },
+    extra_attach = function(bufnr)
+      if vim.bo[bufnr].buftype ~= "" or vim.bo[bufnr].filetype == "helm" then
+        vim.diagnostic.disable()
+      end
+    end,
     treesitter = "yaml",
     tools = { "yaml-language-server", "yamllint", "prettier" },
     filetype = "yaml",
@@ -167,6 +172,15 @@ M.languages = {
     formatter_config = {
       require("formatter.filetypes.python").black,
     },
+    lint_config = nil,
+  },
+  helm = {
+    language_server = "helm_ls",
+    language_server_settings = nil,
+    tools = { "helm-ls" },
+    treesitter = nil,
+    filetype = "helm",
+    formatter_config = nil,
     lint_config = nil,
   },
 }
