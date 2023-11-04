@@ -1,4 +1,4 @@
 kubectl 1.26.3
 helmfile 0.154.0
 nodejs 20.1.0
-krew 0.4.4
+krew v0.4.4
