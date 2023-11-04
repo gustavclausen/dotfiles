@@ -1,1 +1,2 @@
 source ~/.utilities/cleanup.bash
+source ~/.utilities/python.bash

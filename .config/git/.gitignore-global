@@ -3,3 +3,4 @@
 .vscode
 .terraform
 *.iml
+pyrightconfig.json
