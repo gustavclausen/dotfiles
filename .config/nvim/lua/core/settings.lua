@@ -9,9 +9,11 @@ M.languages = {
     treesitter = { "bash" },
     tools = { "bash-language-server", "shfmt", "shellcheck" },
     filetype = "sh",
-    formatter_config = {
-      require("formatter.filetypes.sh").shfmt,
-    },
+    formatter_config = function()
+      return {
+        require("formatter.filetypes.sh").shfmt,
+      }
+    end,
     lint_config = { "shellcheck" },
   },
   docker = {
@@ -38,9 +40,11 @@ M.languages = {
     treesitter = { "json" },
     tools = { "json-lsp", "prettier" },
     filetype = "json",
-    formatter_config = {
-      require("core.plugins.formatters.prettier"),
-    },
+    formatter_config = function()
+      return {
+        require("core.plugins.formatters.prettier"),
+      }
+    end,
     lint_config = nil,
   },
   markdown = {
@@ -49,9 +53,11 @@ M.languages = {
     treesitter = { "markdown", "markdown_inline" },
     tools = { "marksman", "markdownlint" },
     filetype = "markdown",
-    formatter_config = {
-      require("core.plugins.formatters.prettier"),
-    },
+    formatter_config = function()
+      return {
+        require("core.plugins.formatters.prettier"),
+      }
+    end,
     lint_config = { "markdownlint" },
   },
   lua = {
@@ -74,9 +80,11 @@ M.languages = {
     treesitter = { "lua" },
     tools = { "lua-language-server", "stylua" },
     filetype = "lua",
-    formatter_config = {
-      require("formatter.filetypes.lua").stylua,
-    },
+    formatter_config = function()
+      return {
+        require("formatter.filetypes.lua").stylua,
+      }
+    end,
     lint_config = nil,
   },
   terraform = {
@@ -85,9 +93,11 @@ M.languages = {
     treesitter = "hcl",
     tools = { "terraform-ls" },
     filetype = "terraform",
-    formatter_config = {
-      require("formatter.filetypes.terraform").terraformfmt,
-    },
+    formatter_config = function()
+      return {
+        require("formatter.filetypes.terraform").terraformfmt,
+      }
+    end,
     lint_config = nil,
   },
   yaml = {
@@ -117,9 +127,11 @@ M.languages = {
     treesitter = "yaml",
     tools = { "yaml-language-server", "yamllint", "prettier" },
     filetype = "yaml",
-    formatter_config = {
-      require("core.plugins.formatters.prettier"),
-    },
+    formatter_config = function()
+      return {
+        require("core.plugins.formatters.prettier"),
+      }
+    end,
     lint_config = { "yamllint" },
   },
   typescript = {
@@ -128,9 +140,11 @@ M.languages = {
     treesitter = nil,
     tools = { "typescript-language-server", "prettier", "eslint_d" },
     filetype = "typescript",
-    formatter_config = {
-      require("core.plugins.formatters.prettier"),
-    },
+    formatter_config = function()
+      return {
+        require("core.plugins.formatters.prettier"),
+      }
+    end,
     lint_config = nil,
   },
   go = {
@@ -139,10 +153,12 @@ M.languages = {
     treesitter = "go",
     tools = { "gopls" },
     filetype = "go",
-    formatter_config = {
-      require("formatter.filetypes.go").goimports,
-      require("formatter.filetypes.go").gofumpt,
-    },
+    formatter_config = function()
+      return {
+        require("formatter.filetypes.go").goimports,
+        require("formatter.filetypes.go").gofumpt,
+      }
+    end,
     lint_config = nil,
   },
   toml = {
@@ -165,13 +181,18 @@ M.languages = {
   },
   python = {
     language_server = "pyright",
-    language_server_settings = nil,
-    treesitter = "python",
-    tools = { "pyright" },
-    filetype = "python",
-    formatter_config = {
-      require("formatter.filetypes.python").black,
+    language_server_settings = {
+      python = {
+        venv = ".venv",
+        venvPath = ".",
+      },
     },
+    treesitter = "python",
+    tools = { "pyright", "flake8", "black" },
+    filetype = "python",
+    formatter_config = function()
+      return { require("formatter.filetypes.python").black }
+    end,
     lint_config = nil,
   },
   helm = {

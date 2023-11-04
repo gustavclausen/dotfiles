@@ -11,7 +11,7 @@ return {
 
     for _, lan in pairs(settings.languages) do
       if lan.formatter_config ~= nil and lan.filetype ~= nil then
-        filetypes[lan.filetype] = lan.formatter_config
+        filetypes[lan.filetype] = lan.formatter_config()
       end
     end
 
