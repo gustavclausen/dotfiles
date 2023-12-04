@@ -7,7 +7,6 @@ bash
 binutils
 cmake
 colima
-copier
 cue
 curl
 danielfoehrkn/switch/switch
@@ -20,6 +19,7 @@ eksctl
 fd
 findutils
 flex
+fwdekker/mommy/mommy
 fzf
 gawk
 gh

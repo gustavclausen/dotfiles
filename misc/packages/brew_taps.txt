@@ -1,5 +1,6 @@
 aws/tap
 danielfoehrkn/switch
+fwdekker/mommy
 hashicorp/tap
 homebrew/bundle
 homebrew/cask

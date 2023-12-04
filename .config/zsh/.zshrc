@@ -31,6 +31,7 @@ ctx() {
 }
 
 PROMPT='$(ctx)$(common_current_dir)$(common_bg_jobs)$(common_return_status)'
+RPROMPT='$(mommy -1 -s $?) $(common_git_status)'
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # COMMAND-LINE TOOLS
