@@ -93,3 +93,6 @@ bashcompinit
 source ~/.bash_completion
 
 source ~/.bash_utilities
+
+# Created by `pipx` on 2023-11-06 12:40:55
+export PATH="$PATH:/Users/gustavclausen/.local/bin"
