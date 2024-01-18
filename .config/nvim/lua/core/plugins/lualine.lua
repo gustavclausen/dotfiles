@@ -11,8 +11,12 @@ return {
           {
             "filename",
             path = 1,
+            symbols = {
+              modified = "●",
+            },
           },
         },
+        lualine_x = { "filetype" },
       },
     })
   end,
