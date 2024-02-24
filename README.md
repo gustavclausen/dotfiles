@@ -1,3 +1,9 @@
+> [!NOTE]
+>
+> My dotfiles are no longer maintained with this setup. I have migrated to Nix
+> to manage my system configuration. See
+> [gustavclausen/nix-config](https://github.com/gustavclausen/nix-config).
+
 # dotfiles
 
 Collection of my dotfiles.
